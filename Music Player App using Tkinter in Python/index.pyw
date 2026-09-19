@@ -3,7 +3,6 @@ MASA 03_Music Player App using Tkinter in Python with Source Code
 Developer: MASA
 """
 
-#! python3
 import os
 import pickle
 import tkinter as tk
@@ -186,12 +185,11 @@ class Player(tk.Frame):
 		self.v = self.volume.get()
 		mixer.music.set_volume(self.v / 10)
 
-# ----------------------------- Main -------------------------------------------
 
 if __name__ == '__main__':
 	root = tk.Tk()
 	root.geometry('600x400')
-	root.title('Music Player App')
+	root.title('MASA Sonic Player')
 
 	img = PhotoImage(file='icons/music.png')
 	next_ = PhotoImage(file = 'icons/next.gif')
